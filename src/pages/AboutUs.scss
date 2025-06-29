@@ -1,0 +1,72 @@
+@import "../style/variables";
+.element {
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+.background-wrapper {
+  position: relative;
+}
+.about-us {
+  padding: $padding;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Lora", "Lucida Handwriting MT", Lucida Handwriting,
+    "Trebuchet MS", sans-serif;
+  color: rgb(80, 73, 1);
+}
+  .why {
+     padding: $padding;
+ text-align: center;
+  font-size: 40px;
+  font-family: "Lucida Handwriting", "Lucida Handwriting MT", Lucida Handwriting,
+    "Trebuchet MS", sans-serif;
+  color: rgb(80, 73, 1);
+  }
+  .who {
+     padding: $padding;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Lucida Handwriting", "Lucida Handwriting MT", Lucida Handwriting,
+    "Trebuchet MS", sans-serif;
+  color: rgb(80, 73, 1);
+  }
+  .offer {
+     padding: $padding;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Lucida Handwriting", "Lucida Handwriting MT", Lucida Handwriting,
+    "Trebuchet MS", sans-serif;
+  color: rgb(80, 73, 1);
+  }
+  .sell {
+     padding: $padding;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Lucida Handwriting", "Lucida Handwriting MT", Lucida Handwriting,
+    "Trebuchet MS", sans-serif;
+  color: rgb(80, 73, 1);
+  }
+
+  p {
+    font-family:
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+    color: #3e3410;
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+.thankyou {
+    background-position: center;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}

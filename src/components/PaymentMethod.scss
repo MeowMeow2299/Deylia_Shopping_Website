@@ -1,0 +1,30 @@
+.payment-method {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-family: "Cormorant Garamond", "Lora MT", Cormorant Garamond,
+    "Trebuchet MS", sans-serif;
+    color: black;
+
+  h2 {
+    margin-bottom: 16px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: "Cormorant Garamond", "Lora MT", Cormorant Garamond,
+      "Trebuchet MS", sans-serif;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+
+    input[type="radio"] {
+      accent-color: black;
+    }
+  }
+}

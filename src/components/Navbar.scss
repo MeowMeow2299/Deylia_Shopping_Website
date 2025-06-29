@@ -1,0 +1,333 @@
+@import "../style/variables";
+.main-content {
+  transition: transform 0.4s ease;
+}
+
+.main-content.shifted {
+  transform: translateX(-280px); // độ rộng sidebar
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #433a04;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 0%;
+  border-radius: 10px;
+  font-family: "Cormorant Garamond", "Lora MT", Cormorant Garamond,
+    "Trebuchet MS", sans-serif;
+
+  &_left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 5px;
+
+    .navbar_brand {
+      font-weight: 500;
+      align-items: center; 
+      
+       
+    }
+
+    span {
+      font-size: xx-large;
+      color: whitesmoke;
+      font-family: "Cormorant Garamond", "Cormorant Garamond MT",
+        Cormorant Garamond, "Trebuchet MS", sans-serif;
+    }
+  }
+
+  &_center {
+    display: flex;
+    gap: 50px;
+
+    a {
+      position: relative;
+      padding-bottom: 6px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      &.active {
+        border-bottom: 5px solid rgb(0, 0, 0);
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+      a:hover {
+  background-color: #f5f5f5;
+}
+    }
+  }
+
+  &_right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .navbar_icon {
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.navbar_avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  font-size: 10px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100vh;
+  background: #fff9f6;
+  border-left: 1px solid #eee;
+  padding: 2rem 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.06);
+  transition: right 0.4s ease;
+  z-index: 9999;
+
+  &.open {
+    right: 0;
+
+    &::before {
+      animation: shineSidebar 0.9s ease forwards;
+      opacity: 1;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -150%;
+    left: -150%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(60deg, rgba(255,255,255,0) 40%, rgba(255,240,240,0.5) 50%, rgba(255,255,255,0) 60%);
+    transform: rotate(25deg);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &_close {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    font-size: 1.6rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+  }
+
+  &_content {
+    margin-top: 3rem;
+
+    .sidebar_greeting {
+      margin-bottom: 2rem;
+
+      h3 {
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: #222;
+      }
+
+      p {
+        font-size: 0.85rem;
+        color: #777;
+        margin-top: 0.3rem;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 1.2rem;
+
+        a {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          padding: 0.6rem 0.8rem;
+          border-radius: 10px;
+          text-decoration: none;
+          color: #333;
+          font-weight: 500;
+          transition: background 0.2s, color 0.2s;
+
+          span {
+            font-size: 1.2rem;
+          }
+
+          &:hover {
+            background-color: #fdecea;
+            color: #000;
+          }
+        }
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid #eee;
+        margin: 1.2rem 0;
+      }
+    }
+  }
+}
+
+@keyframes shineSidebar {
+  0% {
+    transform: translateX(-100%) rotate(25deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(25deg);
+  }
+}
+
+
+@keyframes shineDropdown {
+  0% {
+    transform: translateX(-100%) rotate(25deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(25deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    border: none; // hoặc border-bottom: none;
+    box-shadow: none;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  ul {
+    font-style: normal;
+    font-size: 10px;
+    font-weight: 100;
+  }
+
+  .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #433a04;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 0%;
+  border-radius: 10px;
+  font-family: "Cormorant Garamond", "Lora MT", Cormorant Garamond,
+    "Trebuchet MS", sans-serif;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .navbar__brand {
+      font-weight: 500;
+    }
+
+    .navbar__dropdown {
+      font-size: 14px;
+    }
+
+    span {
+      font-size: xx-large;
+      color: whitesmoke;
+      font-family: "Cormorant Garamond", "Cormorant Garamond MT",
+        Cormorant Garamond, "Trebuchet MS", sans-serif;
+    }
+  }
+
+  &__center {
+    display: flex;
+    gap: 50px;
+
+    a {
+      position: relative;
+      padding-bottom: 6px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      &.active {
+        border-bottom: 5px solid rgb(255, 213, 0);
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .navbar__icon {
+      font-size: 20px;
+      cursor: pointer;
+
+      .dropdown {
+  position: absolute;
+  top: 100%; // đặt ngay dưới button mẹ
+  left: 0;
+  background-color: white;
+  z-index: 999;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); // mượt mà hiện xuống
+}
+    }
+  }
+}
+
+.navbar__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  font-size: 10px;
+}
+}
+@keyframes shineDropdown {
+  0% {
+    transform: translateX(-100%) rotate(25deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(25deg);
+  }
+}

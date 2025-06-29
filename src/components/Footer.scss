@@ -1,0 +1,63 @@
+/* Footer.scss */
+.footer {
+  color: #351414;
+  padding: 3rem 1rem;
+  font-size: 0.9rem;
+
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-left: 10rem;
+  }
+
+  &__column {
+    flex: 1 1 200px;
+    margin: 0.5rem 0;
+    padding-left: 5rem;
+
+    h4 {
+      font-weight: bold;
+      margin-bottom: 0.75rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      
+
+      li {
+        margin-bottom: 0.5rem;
+
+        a {
+          color: black;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+            color: #dbc500;
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid back;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    padding-left: 5rem;
+  }
+}
+
+.sp {
+    margin-top: 0%;
+    margin-bottom: 0%;
+      font-size: 80px;
+      color: black;
+      font-weight: 800;
+      text-align: center;
+      font-family:'Lucida Handwriting', 'Lucida Handwriting MT', Lucida Handwriting, 'Trebuchet MS', sans-serif;
+    }

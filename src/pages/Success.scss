@@ -1,0 +1,27 @@
+@import '../style/variables';
+
+.success-page {
+  text-align: center;
+  padding: 4rem $padding;
+
+  h2 {
+    color: $color-primary;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: $color-text;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .back-home {
+    text-decoration: none;
+    color: $color-accent;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.sidebar {
+align-items: start;
+  width: 250px;
+
+  .filter-section {
+    margin-bottom: 1rem;
+
+    h4 {
+      margin-bottom: 10px;
+      font-weight: 600;
+      font-size: 30px;
+    }
+
+    .colors button {
+      margin: 2px;
+      background: #fffff4;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      &.active {
+        background: #fffcc0;
+        color: rgb(87, 78, 0);
+        border-color: #222;
+      }
+
+      &:hover {
+        background: #eee;
+      }
+    }
+
+    input[type="radio"] {
+      margin-right: 6px;
+    }
+
+    label {
+      display: block;
+      margin: 6px 0;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+  }
+}

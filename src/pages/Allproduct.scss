@@ -1,0 +1,102 @@
+@import "../style/variables";
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px 0;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 30px;
+
+  select {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid cornsilk;
+    font-size: 0.95rem;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(246, 237, 142, 0.529);
+    transition: border 0.2s ease;
+
+    &:hover {
+      border-color: antiquewhite;
+    }
+  }
+}
+
+.titles {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Lucida Handwriting", "Lucida Handwriting MT", Lucida Handwriting,
+    "Trebuchet MS", sans-serif;
+  color: rgb(80, 73, 1);
+}
+.product-pages {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+
+  .sidebar {
+    width: 240px;
+    border-right: 1px solid #ddd;
+    flex-shrink: 0;
+  }
+
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+  }
+}
+.product-card {
+  overflow: hidden;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 12px;
+  }
+
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+  }
+
+  h4 {
+    font-size: 1rem;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    color: #333;
+    font-weight: 500;
+  }
+
+  .price {
+    font-size: 0.95rem;
+    text-shadow: 0.5px 1px 1px black;
+    -webkit-text-stroke: 0.01px black;
+    color: #433a04;
+    font-weight: bold;
+  }
+}
+@media (max-width: 768px) {
+  .products-page {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}

@@ -1,0 +1,24 @@
+@import '../style/variables';
+
+.user-profile {
+  padding: $padding;
+  text-align: center;
+
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+
+    img {
+      border-radius: 50%;
+      border: 2px solid $color-primary;
+    }
+
+    .info {
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+  }
+}
