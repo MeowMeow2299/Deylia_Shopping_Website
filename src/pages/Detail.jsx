@@ -21,6 +21,7 @@ function Detail() {
   const [selectedColor, setSelectedColor] = useState(null);
   const colors = Array.isArray(product.color) ? product.color : [product.color];
   const [ref, isVisible] = useScrollReveal();
+  const { setBuyNowItem } = useCart();
   if (!product) return <p>Can't find products</p>;
 
   const settings = {
@@ -73,17 +74,14 @@ function Detail() {
       });
       return;
     }
-
     const itemToBuy = {
       ...product,
       selectedColor,
       selectedSize,
       quantity: 1,
     };
-
-    navigate("/cart", {
-      state: { newItem: itemToBuy },
-    });
+    setBuyNowItem(itemToBuy);
+    navigate("/checkout");
   };
 
   return (
@@ -147,7 +145,9 @@ function Detail() {
             <button className="buy-btn" onClick={handleAddToCart}>
               Add to cart
             </button>
-            <button className="buy-btn" onClick={handleBuyNow}>Buy Now</button>
+            <button className="buy-btn" onClick={handleBuyNow}>
+              Buy Now
+            </button>
           </div>
         </div>
       </motion.div>{" "}

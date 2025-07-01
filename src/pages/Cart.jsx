@@ -5,15 +5,25 @@ import { Link } from "react-router-dom";
 import useScrollReveal from "../hooks/useScrollReveal";
 import { useNavigate } from "react-router-dom";
 import dall from "../api/dall";
+import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 const Cart = () => {
   const navigate = useNavigate();
-
   const handleCheckout = () => {
     navigate("/checkout", {
       state: { cartItems: dall },
     });
   };
-  const { cartItems, removeFromCart, updateQuantity, toggleSelect } = useCart();
+   const location = useLocation();
+  const newItem = location.state?.newItem;
+ const { cartItems, setCartItems } = useCart();
+
+  useEffect(() => {
+    if (newItem) {
+      setCartItems((prev) => [...prev, newItem]);
+    }
+  }, [newItem]);
+  const {removeFromCart, updateQuantity, toggleSelect } = useCart();
   const [ref, isVisible] = useScrollReveal();
  const getTotal = () =>
   cartItems.reduce((acc, item) => {

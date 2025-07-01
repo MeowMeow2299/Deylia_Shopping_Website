@@ -6,6 +6,8 @@ export const useCart = () => useContext(CartContext);
 
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
+  const [buyNowItem, setBuyNowItem] = useState(null);
+const itemsToRender = buyNowItem ? [buyNowItem] : cartItems;
 
   const addToCart = (product) => {
     if (!product || !product.id || !product.price) {
@@ -67,6 +69,9 @@ export const CartProvider = ({ children }) => {
         removeFromCart,
         updateQuantity,
         toggleSelect,
+         buyNowItem,
+        setBuyNowItem,
+      setCartItems,
       }}
     >
       {children}

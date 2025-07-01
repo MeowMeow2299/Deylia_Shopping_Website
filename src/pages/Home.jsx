@@ -25,7 +25,7 @@ const Home = () => {
       </div></Link>
      
       <h1 className="maybe">Collection may be your child would like!</h1>
-      <section className="features">
+      <Link to="./products"><section className="features">
         <div className="feature-card">
           <img src="./home1.png"></img>
         </div>
@@ -38,10 +38,10 @@ const Home = () => {
         <div className="feature-card">
           <img src="./home5.png"></img>
         </div>
-      </section>
+      </section></Link>
 
       <h1 className="f0-12">0-12 months</h1>
-      <section className="features">
+       <Link to="./products"><section className="features">
         <div className="feature-card">
           <img src="./0-3months.png"></img>
         </div>
@@ -54,10 +54,10 @@ const Home = () => {
         <div className="feature-card">
           <img src="./9-12months.png"></img>
         </div>
-      </section>
+      </section></Link>
 
       <h1 className="f1-5">1-5 years</h1>
-      <section className="features">
+       <Link to="./products"><section className="features">
         <div className="feature-card">
           <img src="./1year.png"></img>
         </div>
@@ -73,7 +73,7 @@ const Home = () => {
         <div className="feature-card">
           <img src="./5years.png"></img>
         </div>
-      </section>
+      </section></Link>
     </div>
     </div>
   );
