@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Deylia_Shopping_Website/static/css/main.a2a27132.css",
-    "main.js": "/Deylia_Shopping_Website/static/js/main.0ab46bad.js",
+    "main.css": "/Deylia_Shopping_Website/static/css/main.1056a1de.css",
+    "main.js": "/Deylia_Shopping_Website/static/js/main.3d88fd45.js",
     "static/js/453.e4da7e2b.chunk.js": "/Deylia_Shopping_Website/static/js/453.e4da7e2b.chunk.js",
     "static/media/slick.svg": "/Deylia_Shopping_Website/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/Deylia_Shopping_Website/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/Deylia_Shopping_Website/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Deylia_Shopping_Website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Deylia_Shopping_Website/index.html",
-    "main.a2a27132.css.map": "/Deylia_Shopping_Website/static/css/main.a2a27132.css.map",
-    "main.0ab46bad.js.map": "/Deylia_Shopping_Website/static/js/main.0ab46bad.js.map",
+    "main.1056a1de.css.map": "/Deylia_Shopping_Website/static/css/main.1056a1de.css.map",
+    "main.3d88fd45.js.map": "/Deylia_Shopping_Website/static/js/main.3d88fd45.js.map",
     "453.e4da7e2b.chunk.js.map": "/Deylia_Shopping_Website/static/js/453.e4da7e2b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2a27132.css",
-    "static/js/main.0ab46bad.js"
+    "static/css/main.1056a1de.css",
+    "static/js/main.3d88fd45.js"
   ]
 }
