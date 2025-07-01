@@ -1,11 +1,15 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
 
 const CartContext = createContext();
 
 export const useCart = () => useContext(CartContext);
 
 export const CartProvider = ({ children }) => {
-  const [cartItems, setCartItems] = useState([]);
+ const [cartItems, setCartItems] = useState(() => {
+  const saved = localStorage.getItem("cartItems");
+  return saved ? JSON.parse(saved) : [];
+});
+
   const [buyNowItem, setBuyNowItem] = useState(null);
 const itemsToRender = buyNowItem ? [buyNowItem] : cartItems;
 
@@ -59,6 +63,9 @@ const itemsToRender = buyNowItem ? [buyNowItem] : cartItems;
     )
   );
 };
+useEffect(() => {
+  localStorage.setItem("cartItems", JSON.stringify(cartItems));
+}, [cartItems]);
 
 
   return (
