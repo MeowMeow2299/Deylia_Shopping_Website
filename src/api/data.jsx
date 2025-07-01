@@ -1,7 +1,7 @@
 const data = [
   {
     id: 1,
-    image: "./d1.webp",
+    image: "/d1.webp",
     name: "Young Girl Elegant Sweet Yellow Dress",
     description: "Description: 1. Neck",
     size: ["1T", "2T", "3T", "4T", "5T"],
@@ -10,7 +10,7 @@ const data = [
   },
   {
     id: 2,
-    image: "./d2.webp",
+    image: "/d2.webp",
     name: "Young Girl Elegant Sweet Black Dress",
     description: "",
     size: ["1T", "2T", "3T", "4T", "5T"],
@@ -20,7 +20,7 @@ const data = [
 
   {
     id: 3,
-    image: "./d3.webp",
+    image: "/d3.webp",
     name: "Young Girl Ditsy Floral Chiffon Slip Dress",
     description: "Summer vacation and your child.",
     size: ["2T", "3T", "4T", "5T"],
@@ -29,7 +29,7 @@ const data = [
   },
   {
     id: 4,
-    image: "./d4.webp",
+    image: "/d4.webp",
     name: "Two pieces cutie for baby",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -38,7 +38,7 @@ const data = [
   },
   {
     id: 5,
-    image: "./d5.webp",
+    image: "/d5.webp",
     name: "Girls' Minimalist Casual Fashion Versatile Pleated Sleeveless Dress",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -47,7 +47,7 @@ const data = [
   },
   {
     id: 6,
-    image: "./d6.webp",
+   image: "/d6.webp",
     name: "Baby Girl Contrast Mesh Embroidery Design Short Puff Sleeve Cute Dress",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -56,7 +56,7 @@ const data = [
   },
   {
     id: 7,
-    image: "./d7.webp",
+    image: "/d7.webp",
     name: "Young Girls Yellow Sleeveless Ruffle Trim Floral Mesh Patchwork Sleeveless Princess Dress, Sweet Casual Summer Beach Vacation ",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -65,7 +65,7 @@ const data = [
   },
   {
     id: 8,
-    image: "./d8.webp",
+    image: "/d8.webp",
     name: "1pc Girls Mini Fresh Lemon Ditsy Floral Square Collar Puff Sleeve Dress, Spring/Summer",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -75,7 +75,7 @@ const data = [
 
   {
     id: 9,
-    image: "./d9.webp",
+    image: "/d9.webp",
     name: "Vintaside Kids Girl Yellow & White Contrast Color Elegant Simple Short Puff",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -85,7 +85,7 @@ const data = [
 
   {
     id: 10,
-    image: "./d10.webp",
+    image: "/d10.webp",
     name: "Young Girls Spring/Summer Embroidered Ruffle Collar & Puff Sleeve Design Dress, Suitable For School Daily Wear And Vacation",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -95,7 +95,7 @@ const data = [
 
   {
     id: 11,
-    image: "./d11.webp",
+    image: "/d11.webp",
     name: "Young Girl Solid Color Knit Sweet Casual Puff Sleeve A-Line Dress With Round Neck",
     size: ["2T", "3T", "4T", "5T"],
     color: "Yellow",
@@ -104,7 +104,7 @@ const data = [
 
   {
     id: 12,
-    image: "./d12.webp",
+    image: "/d12.webp",
     name: "Floral Embroidery Peter Pan Collar Puff Sleeve Single-Breasted Casual Dress For Young Girl",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -114,7 +114,7 @@ const data = [
 
   {
     id: 13,
-    image: "./d13.webp",
+    image: "/d13.webp",
     name: "Souflis Souflis Adorable And Sweet Young Girl Solid Color Dress With Large Bowknot",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -124,7 +124,7 @@ const data = [
 
   {
     id: 14,
-    image: "./d14.webp",
+    image: "/d14.webp",
     name: "Plaid Peter Pan Collar Short Sleeve Dress Yellow ",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -134,7 +134,7 @@ const data = [
 
   {
     id: 15,
-    image: "./d15.webp",
+    image: "/d15.webp",
     name: "Souflis Girls' Vacation Party Puff Sleeve Bow Accent Collared A-Line Dress",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -144,7 +144,7 @@ const data = [
 
   {
     id: 16,
-    image: "./d16.webp",
+    image: "/d16.webp",
     name: "Blossori Young Girls' Rustic Vacation Ruffle Trim Puff Sleeve Dress",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -153,7 +153,7 @@ const data = [
   },
   {
     id: 17,
-    image: "./d17.webp",
+    image: "/d17.webp",
     name: "Light Yellow Peter Pan Collar Puff Sleeve Dress With Cute Cartoon 3D Flower Bouquet Decor",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -162,7 +162,7 @@ const data = [
   },
   {
     id: 18,
-    image: "./d18.webp",
+    image: "/d18.webp",
     name: "Young Girl Elegant Lovely Forest Girl Style Casual Versatile Classic Lace Hollow Floral Ruffle Collar Long Sleeve Dress",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -171,7 +171,7 @@ const data = [
   },
   {
     id: 19,
-    image: "./d19.webp",
+    image: "/d19.webp",
     name: "Girls Spring/Autumn New Lace Pleated Shirt Long Sleeve & A-Line Ruffle Hem Skirt Set",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -180,7 +180,7 @@ const data = [
   },
   {
     id: 20,
-    image: "./d20.webp",
+    image: "/d20.webp",
     name: "Young Girls Apricot Ruffle Trim A-Line Dress",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -189,7 +189,7 @@ const data = [
   },
   {
     id: 21,
-    image: "./d21.webp",
+    image: "/d21.webp",
     name: "Vintaside Kids Girls' Sweet Puff Sleeve Floral Textured Waist Fit Dress",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -198,7 +198,7 @@ const data = [
   },
   {
     id: 22,
-    image: "./d22.webp",
+    image: "/d22.webp",
     name: "Girls Elegant Princess Ruffled Collar Bubble Long Sleeve Jacquard Embroidered Double Layer Ruffled Hem Loose Princess Dress",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -207,7 +207,7 @@ const data = [
   },
   {
     id: 23,
-    image: "./d23.webp",
+    image: "/d23.webp",
     name: "Young Girl Round Neck Sleeveless Halter Cute Dress, Summer",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -216,7 +216,7 @@ const data = [
   },
   {
     id: 24,
-    image: "./d24.webp",
+    image: "/d24.webp",
     name: "Young Girl Spring Summer Square Neck Short Sleeve Woven Dress",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -225,7 +225,7 @@ const data = [
   },
   {
     id: 25,
-    image: "./d25.webp",
+    image: "/d25.webp",
     name: "Young Girl Floral Print Flounce Sleeve Ruffle Hem Dress",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -234,7 +234,7 @@ const data = [
   },
   {
     id: 26,
-    image: "./d26.webp",
+    image: "/d26.webp",
     name: "Young Girl Casual Sleeveless Waist Gathered Hollow Out Embroidery Decor Midi Dress",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -243,7 +243,7 @@ const data = [
   },
   {
     id: 27,
-    image: "./d27.webp",
+    image: "/d27.webp",
     name: "Girl Elegant Solid Color Jacquard Patchwork Sleeveless Dress",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -252,7 +252,7 @@ const data = [
   },
   {
     id: 28,
-    image: "./d28.webp",
+    image: "/d28.webp",
     name: "rl Minimalist Casual Short Sleeve Dress For Daily Wear Floral",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -261,7 +261,7 @@ const data = [
   },
   {
     id: 29,
-    image: "./d29.webp",
+    image: "/d29.webp",
     name: "Girl's Cap Sleeve Mesh Princess Dress",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
@@ -270,13 +270,13 @@ const data = [
   },
   {
     id: 30,
-    image: "./d30.webp",
+    image: "/d30.webp",
     name: "Girl' Elegant Embroidered Puffy Sleeve Princess Party Dress",
     description: "",
     size: ["2T", "3T", "4T", "5T"],
     color: "Yellow",
     price: "2.952.000 VNĐ"
   },
- ];
+  ];
 
 export default data;

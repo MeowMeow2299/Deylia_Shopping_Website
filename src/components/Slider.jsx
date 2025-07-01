@@ -27,16 +27,16 @@ export default function App() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="/22.png" />
+          <img src={`${process.env.PUBLIC_URL}/22.png`} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="21.png" />
+           <img src={`${process.env.PUBLIC_URL}/21.png`} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/23.png" />
+           <img src={`${process.env.PUBLIC_URL}/23.png`} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="24.png" a href="/productlist" />
+           <img src={`${process.env.PUBLIC_URL}/25.png`} />
         </SwiperSlide>
       </Swiper>
     </>

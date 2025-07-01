@@ -14,31 +14,31 @@ const Cart = () => {
       state: { cartItems: dall },
     });
   };
-   const location = useLocation();
+  const location = useLocation();
   const newItem = location.state?.newItem;
- const { cartItems, setCartItems } = useCart();
+  const { cartItems, setCartItems } = useCart();
 
   useEffect(() => {
     if (newItem) {
       setCartItems((prev) => [...prev, newItem]);
     }
   }, [newItem]);
-  const {removeFromCart, updateQuantity, toggleSelect } = useCart();
+  const { removeFromCart, updateQuantity, toggleSelect } = useCart();
   const [ref, isVisible] = useScrollReveal();
- const getTotal = () =>
-  cartItems.reduce((acc, item) => {
-    const isSelected = item.selected !== false;
+  const getTotal = () =>
+    cartItems.reduce((acc, item) => {
+      const isSelected = item.selected !== false;
 
-    const rawPrice = typeof item.price === "string" 
-      ? item.price.replace(/[^\d]/g, "") // Xoá hết ký tự không phải số
-      : item.price;
+      const rawPrice =
+        typeof item.price === "string"
+          ? item.price.replace(/[^\d]/g, "") // Xoá hết ký tự không phải số
+          : item.price;
 
-    const price = parseInt(rawPrice) || 0;
-    const quantity = parseInt(item.quantity) || 0;
+      const price = parseInt(rawPrice) || 0;
+      const quantity = parseInt(item.quantity) || 0;
 
-    return isSelected ? acc + price * quantity : acc;
-  }, 0);
-
+      return isSelected ? acc + price * quantity : acc;
+    }, 0);
 
   console.log("🧺 Cart items:", cartItems);
   console.log("💰 Tổng tiền đã chọn:", getTotal());
@@ -65,10 +65,15 @@ const Cart = () => {
                   />
 
                   <img
-                    src={`/${item.image?.[0] || "default.png"}`}
+                    src={
+                      item.image && item.image[0]
+                        ? `${process.env.PUBLIC_URL}${item.image[0]}`
+                        : "/default.png"
+                    }
                     alt={item.name}
                     className="cart_item-img"
                   />
+
                   <div className="cart_item-details">
                     <h4>{item.name}</h4>
                     <p>Size: {item.size}</p>
@@ -105,8 +110,7 @@ const Cart = () => {
             <p>Shipping:Free</p>
             <hr />
             <p>
-              Total:{" "}
-              <strong>{getTotal().toLocaleString("vi-VN")} VNĐ</strong>
+              Total: <strong>{getTotal().toLocaleString("vi-VN")} VNĐ</strong>
             </p>
 
             <Link to="/checkout">

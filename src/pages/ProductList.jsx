@@ -15,7 +15,7 @@ const ProductList = () => {
       className={`scroll-reveal ${isVisible ? "show" : ""}`}
     >
     <div className="product-list-page">
-      <img src="./6.png"></img>
+      <img src={`${process.env.PUBLIC_URL}/6.png`} />
       <div>
       <Swiper
         spaceBetween={30}
@@ -27,29 +27,10 @@ const ProductList = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="/7.png" />
+         <img src={`${process.env.PUBLIC_URL}/7.png`} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="8.png" />
-        </SwiperSlide>
-        </Swiper>
-    </div>
-
-    <div>
-      <Swiper
-        spaceBetween={30}
-        effect={'fade'}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[EffectFade, Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <img src="/13.png" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="14.png" />
+          <img src={`${process.env.PUBLIC_URL}/8.png`} />
         </SwiperSlide>
         </Swiper>
     </div>
@@ -65,10 +46,29 @@ const ProductList = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="/11.png" />
+          <img src={`${process.env.PUBLIC_URL}/13.png`} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="12.png" />
+          <img src={`${process.env.PUBLIC_URL}/14.png`} />
+        </SwiperSlide>
+        </Swiper>
+    </div>
+
+    <div>
+      <Swiper
+        spaceBetween={30}
+        effect={'fade'}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[EffectFade, Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+         <img src={`${process.env.PUBLIC_URL}/11.png`} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={`${process.env.PUBLIC_URL}/12.png`} />
         </SwiperSlide>
         </Swiper>
     </div>
@@ -84,29 +84,10 @@ const ProductList = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="/15.png" />
+          <img src={`${process.env.PUBLIC_URL}/15.png`} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="16.png" />
-        </SwiperSlide>
-        </Swiper>
-    </div>
-
-     <div>
-      <Swiper
-        spaceBetween={30}
-        effect={'fade'}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[EffectFade, Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <img src="/17.png" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="18.png" />
+          <img src={`${process.env.PUBLIC_URL}/16.png`} />
         </SwiperSlide>
         </Swiper>
     </div>
@@ -122,10 +103,29 @@ const ProductList = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="/19.png" />
+          <img src={`${process.env.PUBLIC_URL}/17.png`} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="20.png" />
+          <img src={`${process.env.PUBLIC_URL}/18.png`} />
+        </SwiperSlide>
+        </Swiper>
+    </div>
+
+     <div>
+      <Swiper
+        spaceBetween={30}
+        effect={'fade'}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[EffectFade, Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img src={`${process.env.PUBLIC_URL}/19.png`} />
+        </SwiperSlide>
+        <SwiperSlide>
+         <img src={`${process.env.PUBLIC_URL}/20.png`} />
         </SwiperSlide>
         </Swiper>
     </div>

@@ -101,7 +101,12 @@ function Detail() {
             <Slider {...settings}>
               {product.image.map((img, idx) => (
                 <div key={idx}>
-                  <img src={`/${img}`} alt={`Hình ${idx + 1}`} />
+                  <img
+                    key={img}
+                    src={`${process.env.PUBLIC_URL}${img}`}
+                    alt={`Ảnh ${img + 1}`}
+                    className="product-image"
+                  />
                 </div>
               ))}
             </Slider>

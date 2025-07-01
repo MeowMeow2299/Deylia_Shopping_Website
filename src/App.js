@@ -11,7 +11,6 @@ import Checkout from "./pages/Checkout";
 import Payment from "./pages/Payment";
 import Success from './pages/Success';
 import Cart from "./pages/Cart";
-import OrderSummary from './pages/OrderSummary';
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import UserProfile from "./pages/UserProfile";
@@ -29,7 +28,6 @@ function App() {
     
    return (
     <Router>
-      
      <div className={`main-content ${isSidebarOpen ? "shifted" : ""}`}>
       <Navbar />
       <div className="container">
@@ -44,7 +42,6 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/payment" element={<Payment />} />
           <Route path="/success" element={<Success />} />
-          <Route path="/summary" element={<OrderSummary />} />
           <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/profile" element={<UserProfile />} />
@@ -58,7 +55,7 @@ function App() {
       </div>
       </div>
       <Footer/>
-    </Router>
+      </Router>
   );
 }
 

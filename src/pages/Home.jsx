@@ -13,7 +13,7 @@ const Home = () => {
       className={`scroll-reveal ${isVisible ? "show" : ""}`}
     >
       <div className="home">
-        <Link to="./products"><div className="slidenav">
+        <Link to="/products"><div className="slidenav">
           <Slider />
     <motion.section
   className="hero"
@@ -25,53 +25,58 @@ const Home = () => {
       </div></Link>
      
       <h1 className="maybe">Collection may be your child would like!</h1>
-      <Link to="./products"><section className="features">
+      <Link to="/products"><section className="features">
         <div className="feature-card">
-          <img src="./home1.png"></img>
+          <img src={`${process.env.PUBLIC_URL}/home1.png`} />
+
         </div>
         <div className="feature-card">
-          <img src="./home2.png"></img>
+          <img src={`${process.env.PUBLIC_URL}/home2.png`} />
+
         </div>
         <div className="feature-card">
-          <img src="./home4.png"></img>
+          <img src={`${process.env.PUBLIC_URL}/home3.png`} />
+
         </div>
         <div className="feature-card">
-          <img src="./home5.png"></img>
+         <img src={`${process.env.PUBLIC_URL}/home4.png`} />
+
         </div>
       </section></Link>
 
       <h1 className="f0-12">0-12 months</h1>
-       <Link to="./products"><section className="features">
+       <Link to="/products"><section className="features">
         <div className="feature-card">
-          <img src="./0-3months.png"></img>
+         <img src={`${process.env.PUBLIC_URL}/0-3months.png`} />
+
         </div>
         <div className="feature-card">
-          <img src="./3-6months.png"></img>
+          <img src={`${process.env.PUBLIC_URL}/3-6months.png`} />
         </div>
         <div className="feature-card">
-          <img src="./6-9months.png"></img>
+         <img src={`${process.env.PUBLIC_URL}/6-9months.png`} />
         </div>
         <div className="feature-card">
-          <img src="./9-12months.png"></img>
+          <img src={`${process.env.PUBLIC_URL}/9-12months.png`} />
         </div>
       </section></Link>
 
       <h1 className="f1-5">1-5 years</h1>
-       <Link to="./products"><section className="features">
+       <Link to="/products"><section className="features">
         <div className="feature-card">
-          <img src="./1year.png"></img>
+          <img src={`${process.env.PUBLIC_URL}/1year.png`} />
         </div>
         <div className="feature-card">
-          <img src="./2year.png"></img>
+         <img src={`${process.env.PUBLIC_URL}/2year.png`} />
         </div>
         <div className="feature-card">
-          <img src="./3years.png"></img>
+          <img src={`${process.env.PUBLIC_URL}/3years.png`} />
         </div>
         <div className="feature-card">
-          <img src="./4years.png"></img>
+         <img src={`${process.env.PUBLIC_URL}/4years.png`} />
         </div>
         <div className="feature-card">
-          <img src="./5years.png"></img>
+          <img src={`${process.env.PUBLIC_URL}/5years.png`} />
         </div>
       </section></Link>
     </div>

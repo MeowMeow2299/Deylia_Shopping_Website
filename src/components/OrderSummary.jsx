@@ -37,7 +37,15 @@ const OrderSummary = ({ cartItems }) => {
 
         return (
           <div className="summary-item" key={item.id}>
-            <img src={imageSrc} alt={item.name} />
+             <img
+                    src={
+                      item.image && item.image[0]
+                        ? `${process.env.PUBLIC_URL}${item.image[0]}`
+                        : "/default.png"
+                    }
+                    alt={item.name}
+                    className="cart_item-img"
+                  />
             <div>
               <p>{item.name}</p>
               <p>
